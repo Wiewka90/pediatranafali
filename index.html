@@ -56,6 +56,15 @@
     .copybtn{border:1px solid var(--ring);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
     .ok{color:var(--ok);font-weight:700}
     .opinion{font-style:italic}
+    .opinie-sub{color:var(--muted); margin-top:-6px}
+.testi-grid{display:grid; gap:16px}
+@media (min-width:860px){ .testi-grid{grid-template-columns:repeat(3,1fr)} }
+.testi{background:var(--card); border:1px solid var(--ring); border-radius:16px; padding:18px}
+.testi .q{font-style:italic}
+.testi .author{margin-top:10px; font-weight:700}
+.testi .meta{color:var(--muted); font-size:.95rem}
+.testi .quote-mark{font-size:22px; color:var(--brand); margin-right:6px}
+.testi details{margin-top:10px}
   </style>
 </head>
 <body>
@@ -75,6 +84,7 @@
         <a href="#cennik">Cennik</a>
         <a href="#zamowienie">Zamów</a>
         <a href="#faq">FAQ</a>
+        <a href="#opinie">Opinie</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
@@ -239,6 +249,53 @@
       </details>
     </div>
   </section>
+  <section id="opinie">
+  <div class="container">
+    <h2>Opinie lekarzy</h2>
+    <p class="opinie-sub">Wybrane wiadomości od osób, które korzystały z Notatek, Testów i Aplikacji.</p>
+
+    <div class="testi-grid">
+      <!-- 1) Anna -->
+      <div class="testi">
+        <p class="q"><span class="quote-mark">❝</span>Super, że to rozwijacie. To bardzo pomocna inicjatywa.
+        Dla mnie najbardziej pomocne były <strong>Notatki</strong>, które stanowiły zwięzły skrót treści z podręcznika.
+        Z pytań testowych też korzystałam.</p>
+        <div class="author">Anna</div>
+      </div>
+
+      <!-- 2) Sami -->
+      <div class="testi">
+        <p class="q"><span class="quote-mark">❝</span>Materiały okazały się bardzo pomocne — dzięki nim pomyślnie
+        zdałem egzamin PES. Dziękuję i życzę dalszych sukcesów! (Strona polajkowana 😊)</p>
+        <div class="author">Sami</div>
+      </div>
+
+      <!-- 3) Marcin -->
+      <div class="testi">
+        <p class="q"><span class="quote-mark">❝</span>Zdawałem 2 lata temu — <strong>Twoje materiały były absolutnie nieocenione</strong>
+        i polecam je wszystkim młodszym kolegom. Dzięki!</p>
+        <div class="author">Marcin</div>
+      </div>
+    </div>
+
+    <!-- 4) Dłuższa opinia: Łukasz -->
+    <div class="card" style="margin-top:16px">
+      <p class="q"><span class="quote-mark">❝</span><strong>Notatki</strong> — mistrzowski wyciąg pod egzamin,
+      idealne jako ostatnia powtórka. <strong>Aplikacja</strong> — komentarze pod pytaniami świetnie rozszerzają temat.</p>
+      <div class="author">Łukasz</div>
+      <details>
+        <summary>Pokaż pełną opinię</summary>
+        <p>Notatki – super robota (wskazówka: przy chorobie Gilberta warto zaznaczyć dziedziczenie recesywne).
+        To, że do każdego działu są wyselekcjonowane pytania z merytorycznymi wstawkami – bajka.
+        Aplikacja – naprawdę „pozamiatała”: same pytania to jedno, ale <em>dobrze dopasowany</em> komentarz pod każdym
+        robi największą różnicę. Za testy wziąłem się na 10 dni przed i pykło 80%.
+        Konkluzja: świetna robota, cena jak na wartość – bardzo fair. Będę polecać i trzymam kciuki za rozwój.</p>
+      </details>
+      <p class="meta">*Dłuższa wypowiedź skrócona do najważniejszych fragmentów.</p>
+    </div>
+  </div>
+</section>
+
 
   <section id="kontakt">
     <div class="container">
